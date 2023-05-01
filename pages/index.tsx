@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { PageLayoutWrapper, PageLayoutHeader, PageLayoutContent } from "@/components/Layouts"
+import { PageLayoutWrapper, PageLayoutHeader, PageLayoutContent } from "@/pages/Layouts/MainLayout"
 
 export default function Home() {
   return (
