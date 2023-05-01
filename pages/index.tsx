@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { PageLayoutWrapper, PageLayoutHeader, PageLayoutContent } from "@/components/PageLayout"
+import { PageLayoutWrapper, PageLayoutHeader, PageLayoutContent } from "@/components/Layouts"
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <PageLayoutWrapper>
         <PageLayoutHeader title={"Header"} />
-        <PageLayoutContent child={<div>!Content!</div>} />
+        <PageLayoutContent child={<div>Content</div>} />
       </PageLayoutWrapper>
     </>
   )

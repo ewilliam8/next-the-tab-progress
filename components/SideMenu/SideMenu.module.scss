@@ -1,4 +1,18 @@
 .side-menu {
   height: 100vh;
   width: var(--side-menu-width);
+  border-right: 1px solid var(--grey-30);
+  padding: 0 14px;
+  transition: var(--transition);
+
+  &__title {
+    text-align: left;
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: $xxl) {
+  .side-menu {
+    width: var(--side-menu-width-sm);
+  }
 }
