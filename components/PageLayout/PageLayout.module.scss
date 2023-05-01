@@ -1,0 +1,15 @@
+.page-layout {
+  display: flex;
+
+  &__header {
+    height: var(--header-height);
+  }
+
+  &__inner {
+    width: calc(100% - var(--side-menu-width));
+  }
+
+  &__content {
+    height: calc(100% - var(--header-height));
+  }
+}
