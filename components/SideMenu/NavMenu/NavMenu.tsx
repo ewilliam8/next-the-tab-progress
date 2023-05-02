@@ -15,7 +15,7 @@ const navMenuList: menuListType[] = [
   },
   {
     title: "Progress",
-    href: "/preogress"
+    href: "/progress"
   },
   {
     title: "Balance",
@@ -41,10 +41,10 @@ const NavMenu: React.FC = () => {
       {navMenuList.map((item) => {
         return (
           <li key={item.href} className={`${styles["nav-menu__item"]}`}>
-            <a href={item.href}>
+            <Link href={item.href}>
               <span className={`${styles["nav-menu__item-icon"]}`}>•</span>
               {item.title}
-            </a>
+            </Link>
           </li>
         );
       })}
