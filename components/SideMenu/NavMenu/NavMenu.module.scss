@@ -1,0 +1,20 @@
+.nav-menu {
+  width: 100%;
+  margin-top: 55px;
+  background-color: var(--white);
+
+  &__item {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 7px;
+    transition: var(--transition);
+
+    &-icon {
+      margin-right: 8px;
+    }
+  }
+
+  &__item:hover {
+    background-color: var(--grey-50);
+  }
+}

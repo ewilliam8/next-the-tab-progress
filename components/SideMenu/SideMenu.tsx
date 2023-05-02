@@ -2,6 +2,7 @@ import React from "react"
 
 import styles from "./SideMenu.module.scss"
 import UserCard from "../User/UserCard/UserCard"
+import NavMenu from "./NavMenu/NavMenu"
 
 const SideMenu: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const SideMenu: React.FC = () => {
           The Tab Progress
         </h2>
         <UserCard />
+        <NavMenu />
       </div>
     </>
   )
