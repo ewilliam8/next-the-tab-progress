@@ -1,17 +1,25 @@
 .nav-menu {
-  width: 100%;
+  width: calc(100% - 20px);
   margin-top: 55px;
   background-color: var(--white);
 
   &__item {
+    position: relative;
     cursor: pointer;
-    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 10px;
     border-radius: 7px;
     transition: var(--transition);
+  }
 
-    &-icon {
-      margin-right: 8px;
-    }
+  &__item::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    height: 1em;
+    width: 6px;
+    background-color: var(--grey-50);
   }
 
   &__item:hover {

@@ -26,7 +26,7 @@ const navMenuList: menuListType[] = [
     href: "/roadmap"
   },
   {
-    title: "information",
+    title: "Information",
     href: "/info"
   },
   {
@@ -40,12 +40,11 @@ const NavMenu: React.FC = () => {
     <ul className={`${styles["nav-menu"]}`}>
       {navMenuList.map((item) => {
         return (
-          <li key={item.href} className={`${styles["nav-menu__item"]}`}>
-            <Link href={item.href}>
-              <span className={`${styles["nav-menu__item-icon"]}`}>•</span>
+          <Link href={item.href}>
+            <li key={item.href} className={`${styles["nav-menu__item"]}`}>
               {item.title}
-            </Link>
-          </li>
+            </li>
+          </Link>
         );
       })}
     </ul>
